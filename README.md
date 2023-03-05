@@ -20,12 +20,12 @@
 * Далее необходимо скачать image сервиса: </br>
   ``docker pull twep/api-excl-server:default``
 * Следующая команда запускает сервис задания на порту 8080
-  в активной консоли/терминале.`</br>`
-  ``docker run -it -p 8080:8080 twep/api-excl-server:default```</br>`
+  в активной консоли/терминале.</br>
+  ``docker run -it -p 8080:8080 twep/api-excl-server:default``</br>
   Сервис будет писать свои логи в терминале из которого он был создан
   и будет работать по адресу http://localhost:8080.
   Если необходимо поменять порт сервиса, нужно изменить аргумента флага -p,
-  например ``-p 9080:8080`` запускает сервис на порту 9080.`</br>`
+  например ``-p 9080:8080`` запускает сервис на порту 9080.</br>
 
 ### Формат запроса
 
@@ -145,11 +145,11 @@
 
 ### Очистка памяти от docker image и контейнеров
 
-Чтобы не захламлять пространство компьютера можно удалить имедж и контейнер после завершения задания.`</br>`
+Чтобы не захламлять пространство компьютера можно удалить имедж и контейнер после завершения задания.</br>
 
-- Удаления всех контейнеров связанных с имеджами задания:`</br>`
-  ``docker rm $(docker ps -a -q  --filter ancestor='twep/api-excl-server:default')```</br>`
+- Удаления всех контейнеров связанных с имеджами задания:</br>
+  ``docker rm $(docker ps -a -q  --filter ancestor='twep/api-excl-server:default')``</br>
   ``docker rm $(docker ps -a -q  --filter ancestor='twep/api-excl-server:errored')``
-- Удаление имеджей:`</br>`
-  ``docker rmi twep/api-excl-server:default```</br>`
+- Удаление имеджей:</br>
+  ``docker rmi twep/api-excl-server:default``</br>
   ``docker rmi twep/api-excl-server:errored``
