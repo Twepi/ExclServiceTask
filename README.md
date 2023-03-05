@@ -16,7 +16,7 @@
  и запустить контейнер на нужном порту.
 
 * Eсли у вас не установлен docker, его необходимо установить с
-  https://www.docker.com/products/docker-desktop/
+  https://docs.docker.com/get-docker/
 * Далее необходимо скачать image сервиса: </br>
   ``docker pull twep/api-excl-server:default``
 * Следующая команда запускает сервис задания на порту 8080
